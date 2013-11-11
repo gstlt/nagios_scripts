@@ -33,6 +33,7 @@ See ./check_couchbase.py -h for tedailed option list
 
 Author: Grzegorz "You can call me Greg" Adamowicz (gadamowicz@gstlt.info)
 
+Version: 1.0
 
 """
 
