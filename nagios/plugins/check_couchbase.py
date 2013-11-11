@@ -7,15 +7,13 @@ it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-nagios-couchbase-plugin is distributed in the hope that it will be useful,
+check_couchbase.py is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>
-
-Author: Grzegorz "You can call me Greg" Adamowicz (gadamowicz@gstlt.info)
 
 Required libs:
 - pycurl
@@ -25,6 +23,15 @@ Required libs:
 
 Warning:    If you use Python 3, change "import cStringIO" to "import io" and any occurences of cStringIO
             to io.StringIO
+
+
+This plugin implements two checks:
+1. Cluster overall status: memory and disk usage (-s option)
+2. Per vBucket memory usage (-b option)
+
+See ./check_couchbase.py -h for tedailed option list
+
+Author: Grzegorz "You can call me Greg" Adamowicz (gadamowicz@gstlt.info)
 
 
 """
