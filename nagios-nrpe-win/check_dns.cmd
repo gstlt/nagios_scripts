@@ -1,6 +1,8 @@
 @ECHO OFF
+
 SETLOCAL
 SET SCRIPTNAME=%~n0
+
 IF "%1"=="" ECHO Incorrect Syntax - use: %SCRIPTNAME% IPaddress or @File_Of_IPaddresses && GOTO :END
 Set Param=%1
 If not "%Param:~0,1%"=="@" GoTo :RUN
@@ -28,5 +30,5 @@ exit 0
 
 :: Finish with error (CRITICAL)
 :END
-rem pause
 exit 2
+
